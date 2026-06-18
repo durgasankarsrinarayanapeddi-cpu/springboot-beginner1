@@ -1,0 +1,6 @@
+xyx.com
+GET/api/users : return me all users
+PUT/ api/user(id)->JSON   (all the data to be updated eg name age gender)
+POST/api/users-> JSON
+DELETE/api/user(id)
+PATCH                        (partial data to be updated eg just age)
