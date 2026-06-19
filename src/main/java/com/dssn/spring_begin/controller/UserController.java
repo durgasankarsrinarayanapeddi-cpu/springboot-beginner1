@@ -1,4 +1,4 @@
-package com.dssn.controller;
+package com.dssn.spring_begin.controller;
 import java.util.*;
 
 import org.springframework.http.ResponseEntity;
@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.dssn.model.Users;
-import com.dssn.services.UserService;
+import com.dssn.spring_begin.model.Users;
+import com.dssn.spring_begin.services.UserService;
 
 
 @RestController
@@ -27,7 +27,7 @@ public class UserController {
 
     }
     @GetMapping("/{id}")
-    public ResponseEntity getUserById(@PathVariable int id){
+    public ResponseEntity<Users> getUserById(@PathVariable int id){
         
         Users res= userService.getUserById(id);
         if(res!=null)

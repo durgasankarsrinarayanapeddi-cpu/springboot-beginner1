@@ -1,4 +1,4 @@
-package com.dssn.model;
+package com.dssn.spring_begin.model;
 
 public class Users {
   private  int id;
