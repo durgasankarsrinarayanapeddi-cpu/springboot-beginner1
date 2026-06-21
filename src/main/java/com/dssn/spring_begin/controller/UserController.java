@@ -42,13 +42,9 @@ public class UserController {
         return userService.addNewUser(user);
     }
 
-  
-    public String getMethodName(@RequestParam String param) {
-        return new String();
-    }
-      @GetMapping("/randomUser")
-    public  Users randomUser(){
-return userService.randomUser();
+    @GetMapping("/randomUser")
+    public Users randomUser(){
+        return userService.randomUser();
     }
     
 }

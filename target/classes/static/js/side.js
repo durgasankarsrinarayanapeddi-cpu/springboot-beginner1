@@ -1,2 +1,2 @@
-alert("hi");
-console.log("javascript starts now ");
+// alert("hi");
+// console.log("javascript starts now ");

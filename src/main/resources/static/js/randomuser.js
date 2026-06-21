@@ -1,10 +1,7 @@
 function Random_user(){
-    console.log("Random_user function called!"); // Test if function runs
-    
     // Fetch from external randomuser.me API
     fetch("https://randomuser.me/api")
     .then(function (response){
-        console.log("API response received");
         return response.json();
     })
     .then(function(json_data){
@@ -32,6 +29,6 @@ function Random_user(){
         console.log("Shadow should be:", new_user.gender === "male" ? "blue" : "pink");
     })
     .catch(function(error){
-        console.log("Error fetching random user:", error);
+        console.log("Error fetching random user: " + error);
     });
 }
