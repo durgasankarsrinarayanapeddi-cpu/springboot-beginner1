@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.dssn.spring_begin.model.Users;
 import com.dssn.spring_begin.services.UserService;
+import org.springframework.web.bind.annotation.RequestParam;
+
 
 
 @RestController
@@ -38,6 +40,15 @@ public class UserController {
     @PostMapping
     public Users addNewUsers(@RequestBody Users user){
         return userService.addNewUser(user);
+    }
+
+  
+    public String getMethodName(@RequestParam String param) {
+        return new String();
+    }
+      @GetMapping("/randomUser")
+    public  Users randomUser(){
+return userService.randomUser();
     }
     
 }

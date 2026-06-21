@@ -42,5 +42,12 @@ public class UserService {
         return user;
         
     }
+    public Users randomUser(){
+        int size=allUser.size();
+        int randomid=(int)Math.random()*size;
+        return allUser.get(randomid);
+
+        
+    }
     
 }
